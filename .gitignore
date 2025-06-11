@@ -1,0 +1,11 @@
+node_modules
+.pnp.*
+
+# Local env files
+.env.local
+
+# VSCode
+.vscode
+
+# Yarn
+.yarn/install-state.gz

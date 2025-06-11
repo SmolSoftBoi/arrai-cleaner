@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "packageManager": "yarn@4.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace arrai-cleaner dev",
+    "build": "yarn workspaces foreach --topological-dev run build",
+    "test:unit": "yarn workspaces foreach -pt --all --no-private run test:unit --if-present",
+    "test:e2e": "yarn workspaces foreach -pt --all --no-private run test:e2e --if-present"
+  }
+}
