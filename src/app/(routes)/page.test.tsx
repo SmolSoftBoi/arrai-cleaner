@@ -8,3 +8,4 @@ describe('Home page', () => {
     expect(screen.getByText('Hello, developer! 🎉')).toBeInTheDocument();
   });
 });
+

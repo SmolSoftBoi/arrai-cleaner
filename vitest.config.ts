@@ -10,8 +10,10 @@ export default defineConfig({
     },
   },
   test: {
+    include: ['**/*.test.{ts,tsx}'],
     environment: 'jsdom',
     globals: true,
     setupFiles: path.resolve(__dirname, 'test/setup.ts'),
   },
 });
+

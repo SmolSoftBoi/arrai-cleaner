@@ -3,6 +3,7 @@
  * @param classes - Candidate class values.
  * @returns Combined class string.
  */
-export function cn(...classes: (string | undefined | false)[]): string {
+export function cn(...classes: Array<string | undefined | false | null>): string {
   return classes.filter(Boolean).join(' ');
 }
+

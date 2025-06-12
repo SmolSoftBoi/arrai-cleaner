@@ -5,4 +5,8 @@ describe('cn', () => {
   it('joins classes', () => {
     expect(cn('a', false, 'b')).toBe('a b');
   });
+  it('ignores falsy values', () => {
+    expect(cn('a', undefined, '', 'b')).toBe('a b');
+  });
 });
+
