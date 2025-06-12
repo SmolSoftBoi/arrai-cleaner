@@ -1,3 +1,5 @@
+# Arrai Cleaner
+
 **Arrai Cleaner** showcases a lightweight Next.js setup with Tailwind CSS and shadcn/ui components.
 
 ## Getting Started
@@ -24,5 +26,17 @@ Run Playwright tests with:
 
 ```bash
 pnpm test:e2e
+```
+
+Run the linter with:
+
+```bash
+pnpm lint
+```
+
+Watch Playwright tests with:
+
+```bash
+pnpm test:e2e:watch
 ```
 

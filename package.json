@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "test:unit": "vitest",
-    "test:e2e": "playwright test e2e --pass-with-no-tests"
+    "test:e2e": "playwright test e2e --pass-with-no-tests",
+    "test:e2e:watch": "playwright test e2e --watch"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
